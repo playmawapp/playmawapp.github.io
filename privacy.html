@@ -18,7 +18,7 @@
 </head>
 <body>
 <h1>MAW: Privacy Policy</h1>
-<p class="updated">Last updated: July 14, 2026</p>
+<p class="updated">Last updated: September 17, 2026</p>
 
 <p>MAW is a facial-fitness game for iPhone. This policy explains what data the
 app handles and what it never does. The short version: <strong>your face is
@@ -33,6 +33,40 @@ All face processing happens on your device, in real time. The app does
 images, or face-geometry data, to us or to anyone else. When you close a
 battle, the camera data is gone.
 </div>
+
+<h2>Face data and the TrueDepth API</h2>
+<p>This section describes exactly what MAW does with data from the front
+TrueDepth camera, as required by Apple's App Store guidelines.</p>
+<ul>
+  <li><strong>What is collected:</strong> MAW uses Apple's ARKit face tracking
+  (the TrueDepth API) to read facial-expression values called blendshape
+  coefficients, such as how far the jaw is open, whether the tongue is out,
+  or how much the lips are puckered. Each is a number between 0 and 1. The app
+  does not capture camera images or video, does not use the 3D face mesh, and
+  does not use any face-identity or Face&nbsp;ID data.</li>
+  <li><strong>How it is used:</strong> only to count exercise repetitions in
+  real time during a battle and, during onboarding, to set a personal
+  calibration threshold for each movement. There is no other use.</li>
+  <li><strong>How it is stored and for how long:</strong> the live
+  expression values are processed in memory on your iPhone and discarded
+  frame by frame; nothing from a battle is retained once it ends. The only
+  values kept are your calibration thresholds: one number per movement (at
+  most five numbers in total), stored locally on your device in the app's
+  settings. These numbers cannot be used to reconstruct your face or
+  identify you. No face data is ever stored on a server, because MAW has no
+  server.</li>
+  <li><strong>Sharing with third parties:</strong> none. Face data, including
+  the calibration numbers, is never sent to us or to any third party. The
+  third-party services in the app (RevenueCat for subscriptions, PostHog for
+  anonymous usage analytics) do not receive camera or face data of any kind.</li>
+  <li><strong>Deletion and revoking consent:</strong> deleting MAW from your
+  iPhone permanently deletes the calibration numbers. You can withdraw camera
+  access at any time in iOS Settings &rarr; Privacy &amp; Security &rarr;
+  Camera; the game's battles will not run without it, but the rest of the
+  app still works. You can also email
+  <a href="mailto:playmawapp@gmail.com">playmawapp@gmail.com</a> with any
+  question about your data.</li>
+</ul>
 
 <h2>What the app stores on your device</h2>
 <p>Your game progress (streaks, XP, cleared rooms, calibration settings) is
